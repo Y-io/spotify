@@ -7,7 +7,7 @@ import _ from 'lodash';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
-  const port = _.isNaN(Number(env.PORT)) ? 3022 : Number(env.PORT);
+  const port = _.isNaN(Number(env.PORT)) ? 3000 : Number(env.PORT);
 
   return {
     plugins: [
